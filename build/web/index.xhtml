@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+    <h:outputStylesheet name="css/jsfcrud.css"/>
+    <title>Login Page</title>
+    <style>
+        body {
+            height: 100vh; /* Use viewport height to center the content */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-panel {
+            width: 600px; 
+            margin: auto; 
+            text-align: center;
+            padding: 10px;
+        }
+
+        .login-panel .ui-panel {
+            width: 100%; /* Set the panel width to 100% */
+            max-width: 500px; /* Modify the maximum width of the panel */
+        }
+
+        .login-panel .ui-inputtext, .login-panel .ui-password {
+            width: 280px; /* Set the inputText and password width to 100% */
+            max-width: 400px; /* Set the maximum width if needed */
+            margin-bottom: 10px; /* Add margin between components */
+            font-size: 18px; /* Increase font size */
+            padding: 10px; /* Increase padding */
+        }
+
+        .login-panel .ui-button {
+            width: 40%;
+          height: 20%;
+            font-size: 18px; 
+            padding: 5px; 
+        }
+
+        .login-panel .ui-panel label {
+            font-size: 18px; 
+        }
+    </style>
+</h:head>
+
+<h:body>
+    <h:form styleClass="login-panel">
+        <p:panel header="Login" styleClass="ui-panel">
+            <h:panelGrid columns="2">
+                <h:outputLabel for="username" value="Username:"/>
+                <p:inputText id="username" value="#{loginBean.username}" required="true" placeholder="Username" styleClass="ui-inputtext"/>
+
+                <h:outputLabel for="password" value="Password:"/>
+                <p:password id="password" value="#{loginBean.password}" required="true" placeholder="Password" styleClass="ui-password"/>
+            </h:panelGrid>
+
+            <p:commandButton value="Login" action="#{loginBean.login}" ajax="false" styleClass="ui-button"/>
+        </p:panel>
+    </h:form>
+
+    <p:dialog header="Invalid Credentials" widgetVar="invalidCredentialsDialog" modal="true" showEffect="fade" hideEffect="fade">
+        <p:outputLabel value="Invalid credentials. Please try again." />
+    </p:dialog>
+</h:body>
+
+</html>

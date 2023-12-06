@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">  
+    <head>
+        <style>
+            .container {
+                width: 70%; /* Adjust the width as per your requirement */
+                margin: 0 auto; /* Center the container */
+            }
+            .form-container {
+                width: 20%; /* Adjust the width of the form */
+                float: left; /* Float the form to the left */
+            }
+            .table-container {
+                width: 80%; /* Adjust the width of the table container */
+                float: right; /* Float the table container to the right */
+            }
+        </style>
+    </head>
+    <body>
+        <ui:composition >
+            <div class="container">
+                <h:form id="machinesForEmployeForm" styleClass="form-container">
+                    <h:panelGroup id="machinesForEmployeDialogContent" styleClass="table-container">
+
+                        <p:dataTable id="machinesTable" value="#{employeController.machinesAssignedToSelectedEmploye}" var="machine">
+                            <p:column headerText="Machine ID">
+                                <h:outputText value="#{machine.id}" />
+                            </p:column>
+                            <p:column headerText="Machine Reference">
+                                <h:outputText value="#{machine.reference}" />
+                            </p:column>
+                             <p:column headerText="Machine Prix">
+                                 <h:outputText value="#{machine.prix}" />
+                            </p:column>
+                            <p:column headerText="Date Achat">
+                                <h:outputText value="#{machine.dateAchat}">
+                                    <f:convertDateTime pattern="MM/dd/yyyy" />
+                                </h:outputText>
+                            </p:column>
+                        </p:dataTable>
+                    </h:panelGroup>
+                </h:form>
+            </div>
+        </ui:composition>
+    </body>
+</html>

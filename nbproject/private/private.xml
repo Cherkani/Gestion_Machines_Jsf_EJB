@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/cherk/Desktop/aymen/web/employe/machinesForEmploye.xhtml</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/src/java/Entities/Login.java</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/web/employe/Edit.xhtml</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/web/employe/View.xhtml</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/src/java/Entities/Employe.java</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/web/machine/ChartMachine.xhtml</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/src/java/Services/LoginFacade.java</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/web/machine/List.xhtml</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/web/employe/List.xhtml</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/src/java/Controllers/MachineController.java</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/web/index.xhtml</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/web/employe/Create.xhtml</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/src/conf/persistence.xml</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/web/machine/Create.xhtml</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/src/java/Entities/Machine.java</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/src/java/Controllers/LoginController.java</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/web/WEB-INF/faces-config.xml</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/src/java/Controllers/util/JsfUtil.java</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/web/machine/Edit.xhtml</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/src/java/Controllers/EmployeController.java</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/web/machine/View.xhtml</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/src/java/Services/MachineFacade.java</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/src/java/Services/EmployeFacade.java</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/web/template.xhtml</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/web/index.html</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/src/java/Controllers/LanguageBean.java</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/src/java/Bundle.properties</file>
+            <file>file:/C:/Users/cherk/Desktop/aymen/web/welcomePrimefaces.xhtml</file>
+        </group>
+    </open-files>
+</project-private>
