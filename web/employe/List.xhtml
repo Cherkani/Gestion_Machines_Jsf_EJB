@@ -8,7 +8,7 @@
     <style>
         /* Ajoutez ce style dans votre fichier CSS ou directement dans votre balise style si vous le préférez */
 
-#machinesForEmployeDialog {
+#machEmpDialog {
     /* Ajoutez ici vos styles personnalisés */
     background-color: #ffffff; /* Couleur de fond */
     color: #333333; /* Couleur du texte */
@@ -16,24 +16,24 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
 
-#machinesForEmployeDialog .ui-dialog-titlebar {
+#machEmpDialog .ui-dialog-titlebar {
     /* Style de la barre de titre */
     background-color: #007bff; /* Couleur de fond de la barre de titre */
     color: #ffffff; /* Couleur du texte de la barre de titre */
     border-radius: 8px 8px 0 0; /* Bord arrondi seulement en haut */
 }
 
-#machinesForEmployeDialog .ui-dialog-title {
+#machEmpDialog .ui-dialog-title {
     /* Style du texte de la barre de titre */
     font-size: 18px;
 }
 
-#machinesForEmployeDialog .ui-dialog-content {
+#machEmpDialog .ui-dialog-content {
     /* Style du contenu de la boîte de dialogue */
     padding: 20px;
 }
 
-#machinesForEmployeDialog .ui-dialog-footer {
+#machEmpDialog .ui-dialog-footer {
     /* Style du pied de page de la boîte de dialogue si applicable */
     background-color: #f5f5f5;
     border-top: 1px solid #dddddd;
@@ -96,8 +96,8 @@
     </f:facet>
       <p:commandButton icon="ui-icon-search" value="#{bundle.View}" 
                  action="#{employeController.viewMachinesForSelectedEmploye}" 
-                 update=":EmployeListForm :machinesForEmployeForm:machinesForEmployeDialogContent"
-                 oncomplete="PF('machinesForEmployeDialog').show()" 
+                 update=":EmployeListForm :machEmpForm:machEmpDialogContent"
+                 oncomplete="PF('machEmpDialog').show()" 
                  disabled="#{empty employeController.selected}"/>
 
 
@@ -115,10 +115,10 @@
             </h:form>
        
 
-<p:dialog id="machinesForEmployeDialog" widgetVar="machinesForEmployeDialog" modal="true" resizable="false" appendTo="@(body)" header="Machines Assigned" style="width: 50%; margin:450px;">
-    <h:form id="machinesForEmployeForm">
-        <h:panelGroup id="machinesForEmployeDialogContent">
-            <ui:include src="/employe/machinesForEmploye.xhtml"/>
+<p:dialog id="machEmpDialog" widgetVar="machEmpDialog" modal="true" resizable="false" appendTo="@(body)" header="Machines Assigned" style="width: 50%; margin:450px;">
+    <h:form id="machEmpForm">
+        <h:panelGroup id="machEmpDialogContent">
+            <ui:include src="/employe/Mach_Emp.xhtml"/>
         </h:panelGroup>
     </h:form>
 </p:dialog>
